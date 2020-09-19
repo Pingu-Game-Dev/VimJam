@@ -6,9 +6,31 @@ public class AddLoop : MonoBehaviour
 {
 
     public AudioSource source;
+    public float fadeTime = 3f;
+
+    bool flag = false;
+    float fadeInc = 0.1f;
+
     
     void OnCollisionEnter2D(Collision2D col){
-        source.volume = 1f;
-        Destroy(gameObject);
+        flag = true;
+        gameObject.GetComponent<UnityEngine.U2D.SpriteShapeRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
+
+    void Update(){
+        if (flag){
+            fadeTime -= Time.deltaTime;
+            fadeInc -= Time.deltaTime;
+        }
+        if (fadeTime <= 0){
+            Destroy(gameObject);
+            flag = false;
+        }
+        else if (fadeInc <= 0){
+            fadeInc = 0.1f;
+            source.volume += fadeInc / fadeTime;
+        }
+    }
+
 }

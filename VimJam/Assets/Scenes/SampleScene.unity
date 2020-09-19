@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 659938237}
+  fadeTime: 3
 --- !u!50 &140235651
 Rigidbody2D:
   serializedVersion: 4
@@ -1215,6 +1216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 1112206165}
+  fadeTime: 3
 --- !u!50 &1230323661
 Rigidbody2D:
   serializedVersion: 4
@@ -1316,7 +1318,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
