@@ -19,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump")){
             jump = true;
         }
+        
+        if (Input.GetButtonDown("Vertical") && Input.GetAxisRaw("Vertical")==1)
+        {
+            jump = true;
+        }
 
         if (Input.GetButtonDown("Crouch")){
             crouch = true;
