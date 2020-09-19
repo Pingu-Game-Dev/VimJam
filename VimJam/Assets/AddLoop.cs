@@ -14,7 +14,7 @@ public class AddLoop : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D col){
         flag = true;
-        gameObject.GetComponent<UnityEngine.U2D.SpriteShapeRenderer>().enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
