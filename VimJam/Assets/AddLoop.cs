@@ -16,6 +16,9 @@ public class AddLoop : MonoBehaviour
         flag = true;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+        // Set respawn point to the current location 
+        Death.respawnPoint = gameObject.transform.position;
     }
 
     void Update(){
