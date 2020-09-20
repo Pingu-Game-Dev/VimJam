@@ -30,6 +30,10 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+	//These fields are for air control by momentum implementation
+	public float airSpeed = 1f;
+	public float maxVelX = 30f;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -71,6 +75,18 @@ public class CharacterController2D : MonoBehaviour
 			{
 				crouch = true;
 			}
+		}
+
+		// Air control by momentum -testing this is absolutely disgusting
+		if (!m_Grounded)
+		{
+			if (move < 0f && m_Rigidbody2D.velocity.x > -maxVelX){
+				m_Rigidbody2D.AddForce(new Vector2((move*airSpeed)/Time.fixedDeltaTime,0f));
+			}
+			else if (move > 0f && m_Rigidbody2D.velocity.x < maxVelX){
+				m_Rigidbody2D.AddForce(new Vector2((move*airSpeed)/Time.fixedDeltaTime,0f));
+			}
+			
 		}
 
 		//only control the player if grounded or airControl is turned on

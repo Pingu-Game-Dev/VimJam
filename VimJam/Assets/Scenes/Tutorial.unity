@@ -1225,6 +1225,7 @@ GameObject:
   - component: {fileID: 1111361129}
   - component: {fileID: 1111361128}
   - component: {fileID: 1111361127}
+  - component: {fileID: 1111361131}
   - component: {fileID: 1111361126}
   - component: {fileID: 1111361125}
   m_Layer: 0
@@ -1263,7 +1264,7 @@ MonoBehaviour:
   m_JumpForce: 3500
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
-  m_AirControl: 1
+  m_AirControl: 0
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1276,6 +1277,8 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+  airSpeed: 1
+  maxVelX: 30
 --- !u!61 &1111361127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1289,7 +1292,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005101502, y: 0.035513848}
+  m_Offset: {x: -0.0051015094, y: 0.22066833}
   m_SpriteTilingProperty:
     border: {x: 0.09375, y: 0, z: 0.28125, w: 0.09375}
     pivot: {x: 0.4031008, y: 0.3804909}
@@ -1300,7 +1303,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5196098, y: 0.80146533}
+  m_Size: {x: 0.38086283, y: 0.43115637}
   m_EdgeRadius: 0
 --- !u!50 &1111361128
 Rigidbody2D:
@@ -1391,6 +1394,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1111361131
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111361124}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.005840541, y: -0.15401365}
+  serializedVersion: 2
+  m_Radius: 0.19196452
 --- !u!1 &1112206163
 GameObject:
   m_ObjectHideFlags: 0
@@ -6007,7 +6026,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
