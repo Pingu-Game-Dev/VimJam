@@ -34,6 +34,10 @@ public class CharacterController2D : MonoBehaviour
 	public float airSpeed = 1f;
 	public float maxVelX = 30f;
 
+	// These fields are for wall jumping
+	public Transform m_wallCheck;
+	private bool wall = false;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -67,7 +71,8 @@ public class CharacterController2D : MonoBehaviour
 
 	public void Move(float move, bool crouch, bool jump)
 	{
-		// If crouching, check to see if the character can stand up
+		wall = false;
+		// If crouching, check to  see if the character can stand up
 		if (!crouch)
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
@@ -77,17 +82,37 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 
-		// Air control by momentum -testing this is absolutely disgusting
+		// Air control by momentum
 		if (!m_Grounded)
 		{
+			//MOVE LEFT
 			if (move < 0f && m_Rigidbody2D.velocity.x > -maxVelX){
 				m_Rigidbody2D.AddForce(new Vector2((move*airSpeed)/Time.fixedDeltaTime,0f));
 			}
+			//MOVE RIGHT
 			else if (move > 0f && m_Rigidbody2D.velocity.x < maxVelX){
 				m_Rigidbody2D.AddForce(new Vector2((move*airSpeed)/Time.fixedDeltaTime,0f));
 			}
-			
+
+			//Checking for wall collision
+			if (Physics2D.OverlapCircle(m_wallCheck.position, k_CeilingRadius, m_WhatIsGround))
+			{
+				wall = true;
+			}
 		}
+
+			// If the input is moving the player right and the player is facing left...
+			if (move > 0 && !m_FacingRight)
+			{
+				// ... flip the player.
+				Flip();
+			}
+			// Otherwise if the input is moving the player left and the player is facing right...
+			else if (move < 0 && m_FacingRight)
+			{
+				// ... flip the player.
+				Flip();
+			}
 
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
@@ -126,18 +151,6 @@ public class CharacterController2D : MonoBehaviour
 			// And then smoothing it out and applying it to the character
 			m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
-			// If the input is moving the player right and the player is facing left...
-			if (move > 0 && !m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
-			// Otherwise if the input is moving the player left and the player is facing right...
-			else if (move < 0 && m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
 		}
 		// If the player should jump...
 		if (m_Grounded && jump)
@@ -145,6 +158,17 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+		}
+
+		//wall Jump
+		if (wall && jump){
+			wall = false;
+			if (m_FacingRight){
+			m_Rigidbody2D.AddForce(new Vector2(-m_JumpForce, m_JumpForce));
+			}
+			else {
+				m_Rigidbody2D.AddForce(new Vector2(m_JumpForce, m_JumpForce));
+			}
 		}
 	}
 
