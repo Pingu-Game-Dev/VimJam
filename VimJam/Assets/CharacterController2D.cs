@@ -164,10 +164,10 @@ public class CharacterController2D : MonoBehaviour
 		if (wall && jump){
 			wall = false;
 			if (m_FacingRight){
-			m_Rigidbody2D.AddForce(new Vector2(-m_JumpForce, m_JumpForce));
+			m_Rigidbody2D.AddForce(new Vector2(-m_JumpForce, (8f/10f) * m_JumpForce));
 			}
 			else {
-				m_Rigidbody2D.AddForce(new Vector2(m_JumpForce, m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2(m_JumpForce, (8f/10f) * m_JumpForce));
 			}
 		}
 	}
