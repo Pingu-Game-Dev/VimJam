@@ -31,16 +31,19 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_wasCrouching = false;
 
 	//These fields are for air control by momentum implementation
-	public float airSpeed = 1f;
+	public float airMoveSpeed = 0.8f;
+	private float airSpeed;
 	public float maxVelX = 30f;
 
 	// These fields are for wall jumping
 	public Transform m_wallCheck;
+	public Transform m_wallCheck_Back;
 	private bool wall = false;
 
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		airSpeed = airMoveSpeed;
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
@@ -95,9 +98,12 @@ public class CharacterController2D : MonoBehaviour
 			}
 
 			//Checking for wall collision
-			if (Physics2D.OverlapCircle(m_wallCheck.position, k_CeilingRadius, m_WhatIsGround))
+			if (Physics2D.OverlapCircle(m_wallCheck.position, .15f, m_WhatIsGround))
 			{
-				wall = true;
+				wall =true;
+			}
+			else if (Physics2D.OverlapCircle(m_wallCheck_Back.position, .2f, m_WhatIsGround)){
+				Flip();
 			}
 		}
 
@@ -117,6 +123,7 @@ public class CharacterController2D : MonoBehaviour
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
+			airSpeed = airMoveSpeed;
 
 			// If crouching
 			if (crouch)
@@ -163,13 +170,17 @@ public class CharacterController2D : MonoBehaviour
 		//wall Jump
 		if (wall && jump){
 			wall = false;
+			airSpeed = airMoveSpeed * 0.5f;
+			m_Rigidbody2D.velocity = new Vector2(0f,0f);
 			if (m_FacingRight){
-			m_Rigidbody2D.AddForce(new Vector2(-m_JumpForce, (8f/10f) * m_JumpForce));
+			m_Rigidbody2D.AddForce(new Vector2((3f/4f)*-m_JumpForce, (3f/4f)* m_JumpForce));
 			}
 			else {
-				m_Rigidbody2D.AddForce(new Vector2(m_JumpForce, (8f/10f) * m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*m_JumpForce, (3f/4f)* m_JumpForce));
 			}
+			Flip();
 		}
+
 	}
 
 

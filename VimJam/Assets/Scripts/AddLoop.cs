@@ -11,14 +11,11 @@ public class AddLoop : MonoBehaviour
     bool flag = false;
     float fadeInc = 0.1f;
 
-    
-    void OnCollisionEnter2D(Collision2D col){
-        flag = true;
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+    float circleRadius = 1f;
+    Transform point;
 
-        // Set respawn point to the current location 
-        Death.respawnPoint = gameObject.transform.position;
+    void Start(){
+        point = gameObject.GetComponent<Transform>();
     }
 
     void Update(){
@@ -34,6 +31,20 @@ public class AddLoop : MonoBehaviour
             fadeInc = 0.1f;
             source.volume += fadeInc / fadeTime;
         }
+    }
+
+    void FixedUpdate()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(point.position, circleRadius);
+        for (int i = 0; i < colliders.Length; i++)
+		{
+			if (colliders[i].gameObject != gameObject)
+			{
+				flag = true;
+				gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                Death.respawnPoint = new Vector2(point.position.x,point.position.y);
+			}
+		}
     }
 
 }
