@@ -9892,6 +9892,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!169 &1414417841 stripped
+AudioLowPassFilter:
+  m_CorrespondingSourceObject: {fileID: 3917094255150296754, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+  m_PrefabInstance: {fileID: 665247520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1584298923
 GameObject:
   m_ObjectHideFlags: 0
@@ -10564,7 +10569,7 @@ PrefabInstance:
     - target: {fileID: 7105147321138357835, guid: a0f26ea0110fed64cadcbf5e08f1f28e, type: 3}
       propertyPath: lp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1414417841}
     - target: {fileID: 7105147321138357838, guid: a0f26ea0110fed64cadcbf5e08f1f28e, type: 3}
       propertyPath: m_Name
       value: PauseMenuCanvas
