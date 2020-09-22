@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 3917094255895357129}
   - component: {fileID: 3917094255895357128}
   - component: {fileID: 3917094255895357171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_AirControl: 0
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_GroundCheck: {fileID: 3917094255634809250}
   m_CeilingCheck: {fileID: 3917094255499921063}
   m_CrouchDisableCollider: {fileID: 3917094255895357135}

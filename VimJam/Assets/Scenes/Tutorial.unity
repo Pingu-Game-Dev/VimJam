@@ -820,6 +820,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3917094255267934541, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255267934541, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255267934541, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.124
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255499921063, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255499921063, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255634809250, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.399
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255649100651, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255895357170, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917094255895357170, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5889655154839079293, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.044
@@ -895,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 5889655154898131203, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
       propertyPath: m_CrouchDisableCollider
       value: 
-      objectReference: {fileID: 2140124379}
+      objectReference: {fileID: 0}
     - target: {fileID: 5889655154898131212, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -10373,11 +10409,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!61 &2140124379 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5889655154898131202, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
-  m_PrefabInstance: {fileID: 665247520}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5926765046178264019
 PrefabInstance:
   m_ObjectHideFlags: 0

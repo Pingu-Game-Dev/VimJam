@@ -133,6 +133,7 @@ public class CharacterController2D : MonoBehaviour
 			// If crouching
 			if (crouch)
 			{
+				
 				if (!m_wasCrouching)
 				{
 					m_wasCrouching = true;
