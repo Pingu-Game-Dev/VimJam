@@ -40,6 +40,9 @@ public class CharacterController2D : MonoBehaviour
 	public Transform m_wallCheck_Back;
 	private bool wall = false;
 
+	// Animations
+	public Animator animator;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -75,6 +78,8 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool crouch, bool jump)
 	{
 		wall = false;
+		animator.SetFloat("Speed", m_Rigidbody2D.velocity.x * m_Rigidbody2D.velocity.x);
+		animator.SetBool("Grounded", m_Grounded);
 		// If crouching, check to  see if the character can stand up
 		if (!crouch)
 		{
