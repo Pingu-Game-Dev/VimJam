@@ -39,6 +39,9 @@ public class CharacterController2D : MonoBehaviour
 	public Transform m_wallCheck;
 	public Transform m_wallCheck_Back;
 	private bool wall = false;
+	private bool wallBack = false;
+	private float timer = 0f;
+	private bool timerOn = false;
 
 	// Animations
 	public Animator animator;
@@ -53,6 +56,18 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+	}
+
+	void Update()
+	{
+		if (timerOn){
+			timer += Time.deltaTime;
+		}
+
+		if (timer > .2f){
+			timer = 0f;
+			timerOn = false;
+		}
 	}
 
 	private void FixedUpdate()
@@ -78,6 +93,7 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool crouch, bool jump)
 	{
 		wall = false;
+		wallBack = false;
 		animator.SetFloat("Speed", m_Rigidbody2D.velocity.x * m_Rigidbody2D.velocity.x);
 		animator.SetBool("Grounded", m_Grounded);
 		// If crouching, check to  see if the character can stand up
@@ -90,8 +106,21 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 
+		// If the input is moving the player right and the player is facing left...
+		if (move > 0 && !m_FacingRight)
+		{
+			// ... flip the player.
+			Flip();
+		}
+		// Otherwise if the input is moving the player left and the player is facing right...
+		else if (move < 0 && m_FacingRight)
+		{
+			// ... flip the player.
+			Flip();
+		}
+
 		// Air control by momentum
-		if (!m_Grounded)
+		if (!m_Grounded && !timerOn)
 		{
 			//MOVE LEFT
 			if (move < 0f && m_Rigidbody2D.velocity.x > -maxVelX){
@@ -103,27 +132,15 @@ public class CharacterController2D : MonoBehaviour
 			}
 
 			//Checking for wall collision
-			if (Physics2D.OverlapCircle(m_wallCheck.position, .15f, m_WhatIsGround))
+			if (Physics2D.OverlapCircle(m_wallCheck.position, .2f, m_WhatIsGround))
 			{
-				wall =true;
+				wall = true;
 			}
-			else if (Physics2D.OverlapCircle(m_wallCheck_Back.position, .2f, m_WhatIsGround)){
-				Flip();
+			else if (Physics2D.OverlapCircle(m_wallCheck_Back.position, .6f, m_WhatIsGround)){
+				wallBack = true;
 			}
 		}
 
-			// If the input is moving the player right and the player is facing left...
-			if (move > 0 && !m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
-			// Otherwise if the input is moving the player left and the player is facing right...
-			else if (move < 0 && m_FacingRight)
-			{
-				// ... flip the player.
-				Flip();
-			}
 
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
@@ -174,17 +191,33 @@ public class CharacterController2D : MonoBehaviour
 		}
 
 		//wall Jump
-		if (wall && jump){
-			wall = false;
+		if ((wall || wallBack) && jump && !(wall &&wallBack)){
+			
 			airSpeed = airMoveSpeed * 0.5f;
 			m_Rigidbody2D.velocity = new Vector2(0f,0f);
-			if (m_FacingRight){
-			m_Rigidbody2D.AddForce(new Vector2((3f/4f)*-m_JumpForce, (3f/4f)* m_JumpForce));
+			
+			if (m_FacingRight && wall){
+				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*-m_JumpForce, (3f/4f)* m_JumpForce));
+				Flip();
+				//Debug.Log("FRONT - RIGHT");
 			}
-			else {
+			else if (m_FacingRight &&wallBack){
 				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*m_JumpForce, (3f/4f)* m_JumpForce));
+				//Debug.Log("BACK - LEFT");
 			}
-			Flip();
+			else if (!m_FacingRight && wallBack){
+				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*-m_JumpForce, (3f/4f)* m_JumpForce));
+				//Debug.Log("BACK - RIGHT");
+			}
+			else if (!m_FacingRight && wall){
+				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*m_JumpForce, (3f/4f)* m_JumpForce));
+				Flip();
+				//Debug.Log("FRONT - LEFT");
+			}
+			
+			wall = false;
+			wallBack = false;
+			timerOn = true;
 		}
 
 	}
