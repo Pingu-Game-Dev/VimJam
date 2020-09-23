@@ -12,11 +12,15 @@ public class MoverConsistent : MonoBehaviour
     [SerializeField] private bool m_StartMovingRight = true;
     [SerializeField] private float m_MoveSpeed = 4f;
     private Vector2 startPos;
+    // Grid size
+    private readonly float SCALE = 6f;
 
 
     void Start()
     {
         startPos = gameObject.GetComponent<Transform>().position;
+        m_LeftBound *= SCALE;
+        m_RightBound *= SCALE;
     }
    
 

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: BarnRoof
+  m_Name: Metal_Railing
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 3577491588614590344, guid: 656a7f270afe1e34c9f198a2c53e3704, type: 3}
+  m_Sprite: {fileID: 5202770132659684561, guid: 656a7f270afe1e34c9f198a2c53e3704, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

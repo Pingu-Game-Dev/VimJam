@@ -35,7 +35,7 @@ public class FallDamage : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!ground && player.velocity.y < minVel) {
+        if (!ground) {
             minVel = player.velocity.y;
         }
 
