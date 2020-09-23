@@ -64,7 +64,7 @@ public class CharacterController2D : MonoBehaviour
 			timer += Time.deltaTime;
 		}
 
-		if (timer > .2f){
+		if (timer > .1f){
 			timer = 0f;
 			timerOn = false;
 		}
@@ -190,6 +190,13 @@ public class CharacterController2D : MonoBehaviour
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
 
+		//wall slide
+		if ((wall || wallBack) && !jump && !(wall &&wallBack)){
+			if (m_Rigidbody2D.velocity.y < -60f){
+				m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x , -60f);
+			}
+		}
+
 		//wall Jump
 		if ((wall || wallBack) && jump && !(wall &&wallBack)){
 			
@@ -197,20 +204,20 @@ public class CharacterController2D : MonoBehaviour
 			m_Rigidbody2D.velocity = new Vector2(0f,0f);
 			
 			if (m_FacingRight && wall){
-				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*-m_JumpForce, (3f/4f)* m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2((1f/2f)*-m_JumpForce,  m_JumpForce));
 				Flip();
 				//Debug.Log("FRONT - RIGHT");
 			}
 			else if (m_FacingRight &&wallBack){
-				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*m_JumpForce, (3f/4f)* m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2((1f/2f)*m_JumpForce,  m_JumpForce));
 				//Debug.Log("BACK - LEFT");
 			}
 			else if (!m_FacingRight && wallBack){
-				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*-m_JumpForce, (3f/4f)* m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2((1f/2f)*-m_JumpForce,  m_JumpForce));
 				//Debug.Log("BACK - RIGHT");
 			}
 			else if (!m_FacingRight && wall){
-				m_Rigidbody2D.AddForce(new Vector2((3f/4f)*m_JumpForce, (3f/4f)* m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2((1f/2f)*m_JumpForce,  m_JumpForce));
 				Flip();
 				//Debug.Log("FRONT - LEFT");
 			}
