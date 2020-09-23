@@ -74,6 +74,9 @@ TextureImporter:
   - first:
       213: -777190519236846671
     second: Dirt
+  - first:
+      213: -3067725116988217804
+    second: spikes
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -538,7 +541,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,6 +549,27 @@ TextureImporter:
       bones: []
       spriteID: 1bb161a275dd635f0800000000000000
       internalID: -777190519236846671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spikes
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436af5572404d65d0800000000000000
+      internalID: -3067725116988217804
       vertices: []
       indices: 
       edges: []
