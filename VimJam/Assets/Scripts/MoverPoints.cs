@@ -18,7 +18,7 @@ public class MoverPoints : MonoBehaviour
 
     void Start()
     {
-        startPos = gameObject.GetComponent<Transform>().position;
+        startPos = gameObject.transform.position;
         xlast = startPos.x;
         ylast = startPos.y;
         target = 0;
