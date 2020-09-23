@@ -65,6 +65,15 @@ TextureImporter:
   - first:
       213: -4830375135539751443
     second: BarnWallRightCorner
+  - first:
+      213: -8594003266237144890
+    second: Metal_Walkway
+  - first:
+      213: 5202770132659684561
+    second: Metal_Railing
+  - first:
+      213: -777190519236846671
+    second: Dirt
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -474,6 +483,69 @@ TextureImporter:
       bones: []
       spriteID: de5164a186f07fcb0800000000000000
       internalID: -4830375135539751443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal_Walkway
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c06365ff87fbb880800000000000000
+      internalID: -8594003266237144890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal_Railing
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d44135ced3f33840800000000000000
+      internalID: 5202770132659684561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb161a275dd635f0800000000000000
+      internalID: -777190519236846671
       vertices: []
       indices: 
       edges: []
