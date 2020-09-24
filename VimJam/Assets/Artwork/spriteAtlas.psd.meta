@@ -81,11 +81,8 @@ TextureImporter:
   - first:
       213: -1496215642677122708
     second: Metal_Walkway
-<<<<<<< HEAD
 =======
 >>>>>>> parent of fbbc000... Updated Palette
-=======
->>>>>>> parent of a872662... Manual merge
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -584,9 +581,6 @@ TextureImporter:
       edges: []
       weights: []
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of a872662... Manual merge
     - serializedVersion: 2
       name: Metal_Walkway
       rect:
@@ -608,11 +602,8 @@ TextureImporter:
       indices:
       edges: []
       weights: []
-<<<<<<< HEAD
 =======
 >>>>>>> parent of fbbc000... Updated Palette
-=======
->>>>>>> parent of a872662... Manual merge
     outline: []
     physicsShape: []
     bones: []
