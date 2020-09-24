@@ -77,22 +77,12 @@ TextureImporter:
   - first:
       213: -3067725116988217804
     second: spikes
+<<<<<<< HEAD
   - first:
       213: -1496215642677122708
-<<<<<<< HEAD
     second: Metal_Walkway
 =======
-    second: Road
-  - first:
-      213: 5205447961149696296
-    second: Brick_Red
-  - first:
-      213: 1511441437679330942
-    second: Brick_Black
-  - first:
-      213: -4882607398807354758
-    second: Road_Ground
->>>>>>> eea192e3a7c83a5161300a952a0a5bea288dd98a
+>>>>>>> parent of fbbc000... Updated Palette
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -209,7 +199,7 @@ TextureImporter:
       spriteID: af2c40bfec9bdd800800000000000000
       internalID: 638871020782273274
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -230,7 +220,7 @@ TextureImporter:
       spriteID: 7c768067f7626a720800000000000000
       internalID: 2857013342496122823
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -251,7 +241,7 @@ TextureImporter:
       spriteID: ea9ffb92349566c90800000000000000
       internalID: -7176950811170178642
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -272,7 +262,7 @@ TextureImporter:
       spriteID: 714dc291f0fb83230800000000000000
       internalID: 3618852372159976471
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -293,7 +283,7 @@ TextureImporter:
       spriteID: 46204f6773601c230800000000000000
       internalID: 3657211207690224228
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -314,7 +304,7 @@ TextureImporter:
       spriteID: f40edbabe05646f90800000000000000
       internalID: -6961328010070990769
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -335,7 +325,7 @@ TextureImporter:
       spriteID: a9541e08530390440800000000000000
       internalID: 4902502675723142554
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -356,7 +346,7 @@ TextureImporter:
       spriteID: 6a80d050cbdc39f90800000000000000
       internalID: -6947983592680257370
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -377,7 +367,7 @@ TextureImporter:
       spriteID: 2d5727383b50e7290800000000000000
       internalID: -7890863228543928878
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -398,7 +388,7 @@ TextureImporter:
       spriteID: df1dde7c7636411c0800000000000000
       internalID: -4533889627468213763
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -419,7 +409,7 @@ TextureImporter:
       spriteID: 606aaffaef6e77310800000000000000
       internalID: 1402843790497719814
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -440,7 +430,7 @@ TextureImporter:
       spriteID: a022eed34b299e210800000000000000
       internalID: 1362781665087070730
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -461,7 +451,7 @@ TextureImporter:
       spriteID: 88f025e35adc5a130800000000000000
       internalID: 3577491588614590344
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -482,7 +472,7 @@ TextureImporter:
       spriteID: 9362e27524db15670800000000000000
       internalID: 8525803662217193017
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -503,7 +493,7 @@ TextureImporter:
       spriteID: de5164a186f07fcb0800000000000000
       internalID: -4830375135539751443
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -524,7 +514,7 @@ TextureImporter:
       spriteID: 6c06365ff87fbb880800000000000000
       internalID: -8594003266237144890
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -545,7 +535,7 @@ TextureImporter:
       spriteID: 1d44135ced3f33840800000000000000
       internalID: 5202770132659684561
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -566,7 +556,7 @@ TextureImporter:
       spriteID: 1bb161a275dd635f0800000000000000
       internalID: -777190519236846671
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
@@ -578,7 +568,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -587,11 +577,11 @@ TextureImporter:
       spriteID: 436af5572404d65d0800000000000000
       internalID: -3067725116988217804
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
-    - serializedVersion: 2
 <<<<<<< HEAD
+    - serializedVersion: 2
       name: Metal_Walkway
       rect:
         serializedVersion: 2
@@ -601,17 +591,6 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
-=======
-      name: Road
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> eea192e3a7c83a5161300a952a0a5bea288dd98a
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -620,88 +599,24 @@ TextureImporter:
       spriteID: c69e8dedccf5c3be0800000000000000
       internalID: -1496215642677122708
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
-<<<<<<< HEAD
 =======
-    - serializedVersion: 2
-      name: Brick_Red
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 829eb1d47577d3840800000000000000
-      internalID: 5205447961149696296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Brick_Black
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e76aea7caf7b9f410800000000000000
-      internalID: 1511441437679330942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Road_Ground
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a72c460a07e7d3cb0800000000000000
-      internalID: -4882607398807354758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
->>>>>>> eea192e3a7c83a5161300a952a0a5bea288dd98a
+>>>>>>> parent of fbbc000... Updated Palette
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
-    indices: 
+    indices:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+  spritePackingTag:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:
