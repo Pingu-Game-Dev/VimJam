@@ -10,10 +10,11 @@ public class MoverPoints : MonoBehaviour
     // Setup bits
     [SerializeField] private Vector2[] Points = new Vector2[4];
     [SerializeField] private float m_MoveSpeed = 4f; // dictates the fastest x or y speed allowed
+    [SerializeField] private int StartingIndex = 0;
     private Vector2 startPos;
     private float xlast, ylast, xspeed, yspeed, xdiff, ydiff;
     private int xdir, ydir; // will be 1 or -1 depending on direction of travel, or 0 if not moving
-    private int target, nopoints;
+    private int target;
 
 
     void Start()
@@ -21,7 +22,7 @@ public class MoverPoints : MonoBehaviour
         startPos = gameObject.transform.position;
         xlast = startPos.x;
         ylast = startPos.y;
-        target = 0;
+        target = StartingIndex;
 
         // work out the new direcion
         // for x

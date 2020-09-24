@@ -1,85 +1,46 @@
 fileFormatVersion: 2
-guid: 656a7f270afe1e34c9f198a2c53e3704
+guid: 3ebdee216151853458fc9843b7fad69c
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 638871020782273274
-    second: Wall_LightWood
+    second: Wood_wall_light
   - first:
       213: 2857013342496122823
-    second: Floor_DarkWood
-  - first:
-      213: 592973256060254736
-    second: Wall_Wood_Light
-  - first:
-      213: 138322264378738314
-    second: Wall_Wood_Red
+    second: spriteAtlas_1
   - first:
       213: 4902502675723142554
-    second: FloorFill_Wood_Dark
+    second: Wood_wall_red
   - first:
       213: -6947983592680257370
-    second: FloorTop_Wood_Dark
-  - first:
-      213: 638871020782273274
-    second: Wall_Wood_Light
-  - first:
-      213: 2857013342496122823
-    second: Wall_Wood_Red
-  - first:
-      213: -7176950811170178642
-    second: Floor_Fill_Dark
-  - first:
-      213: 3618852372159976471
-    second: Floor_Top_Dark
+    second: Wood_floor
   - first:
       213: 3657211207690224228
-    second: Floor_Support_Dark
+    second: Wood
   - first:
       213: -6961328010070990769
-    second: Floor_Arch_Dark
-  - first:
-      213: 4902502675723142554
-    second: Floor_PillarRight_Dark
-  - first:
-      213: -6947983592680257370
-    second: Floor_PillarLeft_Dark
+    second: Wood_arch_left
   - first:
       213: -7890863228543928878
-    second: BarnWallLeft
+    second: Wood_arch_right
   - first:
       213: -4533889627468213763
-    second: BarnWallRight
+    second: Wood_beam_left
   - first:
       213: 1402843790497719814
-    second: BarnTopLeft
+    second: Wood_beam_right
   - first:
       213: 1362781665087070730
-    second: BarnTopRight
+    second: Brick_black
   - first:
       213: 3577491588614590344
-    second: BarnRoof
+    second: Brick_red
   - first:
       213: 8525803662217193017
-    second: BarnWallLeftCorner
+    second: Road
   - first:
       213: -4830375135539751443
-    second: BarnWallRightCorner
-  - first:
-      213: -8594003266237144890
-    second: Metal_Fence
-  - first:
-      213: 5202770132659684561
-    second: Metal_Railing
-  - first:
-      213: -777190519236846671
-    second: Dirt
-  - first:
-      213: -3067725116988217804
-    second: spikes
-  - first:
-      213: -1496215642677122708
-    second: Metal_Walkway
+    second: Concrete
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,7 +71,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -124,7 +85,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 5
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -144,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -156,19 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -179,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall_Wood_Light
+      name: Wood_wall_light
       rect:
         serializedVersion: 2
         x: 0
@@ -187,7 +136,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,15 +149,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Wood_Red
+      name: spriteAtlas_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 480
-        width: 32
-        height: 32
+        x: 251
+        y: 355
+        width: 20
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,99 +170,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Fill_Dark
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea9ffb92349566c90800000000000000
-      internalID: -7176950811170178642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_Top_Dark
+      name: Wood_wall_red
       rect:
         serializedVersion: 2
         x: 32
-        y: 448
+        y: 480
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 714dc291f0fb83230800000000000000
-      internalID: 3618852372159976471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_Support_Dark
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46204f6773601c230800000000000000
-      internalID: 3657211207690224228
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_Arch_Dark
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f40edbabe05646f90800000000000000
-      internalID: -6961328010070990769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_PillarRight_Dark
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,15 +191,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_PillarLeft_Dark
+      name: Wood_floor
       rect:
         serializedVersion: 2
-        x: 160
+        x: 32
         y: 448
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,15 +212,57 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnWallLeft
+      name: Wood
       rect:
         serializedVersion: 2
-        x: 64
-        y: 480
+        x: 0
+        y: 448
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46204f6773601c230800000000000000
+      internalID: 3657211207690224228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_arch_left
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40edbabe05646f90800000000000000
+      internalID: -6961328010070990769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood_arch_right
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,15 +275,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnWallRight
+      name: Wood_beam_left
       rect:
         serializedVersion: 2
-        x: 96
-        y: 480
+        x: 128
+        y: 448
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,15 +296,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnTopLeft
+      name: Wood_beam_right
       rect:
         serializedVersion: 2
-        x: 128
-        y: 480
+        x: 160
+        y: 448
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,15 +317,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnTopRight
+      name: Brick_black
       rect:
         serializedVersion: 2
-        x: 160
-        y: 480
+        x: 0
+        y: 352
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -431,15 +338,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnRoof
+      name: Brick_red
       rect:
         serializedVersion: 2
-        x: 192
-        y: 480
+        x: 32
+        y: 352
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,15 +359,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnWallLeftCorner
+      name: Road
       rect:
         serializedVersion: 2
-        x: 224
-        y: 480
+        x: 64
+        y: 352
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,116 +380,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarnWallRightCorner
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 480
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de5164a186f07fcb0800000000000000
-      internalID: -4830375135539751443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Metal_Fence
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c06365ff87fbb880800000000000000
-      internalID: -8594003266237144890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Metal_Railing
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d44135ced3f33840800000000000000
-      internalID: 5202770132659684561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bb161a275dd635f0800000000000000
-      internalID: -777190519236846671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spikes
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 436af5572404d65d0800000000000000
-      internalID: -3067725116988217804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Metal_Walkway
+      name: Concrete
       rect:
         serializedVersion: 2
         x: 96
-        y: 416
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -592,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c69e8dedccf5c3be0800000000000000
-      internalID: -1496215642677122708
+      spriteID: de5164a186f07fcb0800000000000000
+      internalID: -4830375135539751443
       vertices: []
       indices: 
       edges: []
