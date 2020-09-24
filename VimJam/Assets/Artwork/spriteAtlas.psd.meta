@@ -67,7 +67,7 @@ TextureImporter:
     second: BarnWallRightCorner
   - first:
       213: -8594003266237144890
-    second: Metal_Walkway
+    second: Metal_Fence
   - first:
       213: 5202770132659684561
     second: Metal_Railing
@@ -77,6 +77,9 @@ TextureImporter:
   - first:
       213: -3067725116988217804
     second: spikes
+  - first:
+      213: -1496215642677122708
+    second: Metal_Walkway
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -491,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Metal_Walkway
+      name: Metal_Fence
       rect:
         serializedVersion: 2
         x: 0
@@ -559,7 +562,28 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 416
-        width: 33
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436af5572404d65d0800000000000000
+      internalID: -3067725116988217804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal_Walkway
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -568,8 +592,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 436af5572404d65d0800000000000000
-      internalID: -3067725116988217804
+      spriteID: c69e8dedccf5c3be0800000000000000
+      internalID: -1496215642677122708
       vertices: []
       indices: 
       edges: []
