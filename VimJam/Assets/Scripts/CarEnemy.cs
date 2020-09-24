@@ -14,7 +14,7 @@ public class CarEnemy : MonoBehaviour
     void Start()
     {
         startScale = gameObject.transform.localScale;
-        scaleChange = new Vector3(speed *0.01f * Time.deltaTime, speed *0.01f * Time.deltaTime, 0f);
+        scaleChange = new Vector3(speed *0.1f * Time.deltaTime, speed *0.1f * Time.deltaTime, 0f);
     }
 
     // Update is called once per frame
