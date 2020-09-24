@@ -79,7 +79,20 @@ TextureImporter:
     second: spikes
   - first:
       213: -1496215642677122708
+<<<<<<< HEAD
     second: Metal_Walkway
+=======
+    second: Road
+  - first:
+      213: 5205447961149696296
+    second: Brick_Red
+  - first:
+      213: 1511441437679330942
+    second: Brick_Black
+  - first:
+      213: -4882607398807354758
+    second: Road_Ground
+>>>>>>> eea192e3a7c83a5161300a952a0a5bea288dd98a
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -578,6 +591,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Metal_Walkway
       rect:
         serializedVersion: 2
@@ -587,6 +601,17 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Road
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> eea192e3a7c83a5161300a952a0a5bea288dd98a
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,6 +623,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD
+=======
+    - serializedVersion: 2
+      name: Brick_Red
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829eb1d47577d3840800000000000000
+      internalID: 5205447961149696296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brick_Black
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76aea7caf7b9f410800000000000000
+      internalID: 1511441437679330942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Ground
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72c460a07e7d3cb0800000000000000
+      internalID: -4882607398807354758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> eea192e3a7c83a5161300a952a0a5bea288dd98a
     outline: []
     physicsShape: []
     bones: []
