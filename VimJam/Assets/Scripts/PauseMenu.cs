@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -52,11 +51,6 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quitting Game");
         Application.Quit();
         UnityEditor.EditorApplication.isPlaying = false;
-    }
-
-    public void returnToMenu()
-    {
-        SceneManager.LoadScene(0);
     }
 
 }

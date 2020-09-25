@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class BouncePad : MonoBehaviour
 {
-    //Transform point;
-    //[SerializeField] private LayerMask m_WhatIsPlayer;
+    Transform point;
+    [SerializeField] private LayerMask m_WhatIsPlayer;
     public float bounceForce = 4000f;
-    //bool jump;
-    //Vector2 scale;
+    bool jump;
+    Vector2 scale;
     public Rigidbody2D player;
-    //float Vel = 0f;
-    //float jumpForce;
-/*
+    float Vel = 0f;
+    float jumpForce;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,11 +42,10 @@ public class BouncePad : MonoBehaviour
             }
         }
     }
-*/
 
     void OnCollisionEnter2D(Collision2D collision){
-        if (collision.collider.attachedRigidbody.Equals(player)){
-            player.AddForce(new Vector2(0f,bounceForce));
+        if (collision.relativeVelocity.y < -20f){
+            player.AddForce(new Vector2(0f,bounceForce + jumpForce));
         }
     }
 

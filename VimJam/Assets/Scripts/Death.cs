@@ -17,9 +17,7 @@ public class Death : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.Equals(player)){
         collision.transform.position = respawnPoint;
-        }
     }
 
 }
