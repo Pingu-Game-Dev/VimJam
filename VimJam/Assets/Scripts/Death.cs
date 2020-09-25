@@ -17,7 +17,10 @@ public class Death : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.transform.position = respawnPoint;
+        if (collision.collider.gameObject.Equals(player)){
+            collision.collider.attachedRigidbody.velocity = new Vector2(0f,0f);
+            collision.transform.position = respawnPoint;
+        }
     }
 
 }
