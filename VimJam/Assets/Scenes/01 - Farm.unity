@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LeftBound: 0
-  m_RightBound: 10
+  m_RightBound: 60
   m_StartMovingRight: 1
   m_MoveSpeed: 40
 --- !u!114 &455723221
@@ -1145,7 +1145,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 407c5d27a29462b48882917afe34f512, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ad348a332fc7d4cb219ef7a94f06a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LeftBound: 11
+  m_LeftBound: 66
   m_RightBound: 0
   m_StartMovingRight: 1
   m_MoveSpeed: 30
@@ -1457,7 +1457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LeftBound: 0
-  m_RightBound: 11
+  m_RightBound: 66
   m_StartMovingRight: 1
   m_MoveSpeed: 30
 --- !u!114 &631994605
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 2039916660}
-  closer: {fileID: 0}
+  closer: {fileID: 616325198}
   nextScene: 03 - Jazz
 --- !u!50 &760684912
 Rigidbody2D:
@@ -2030,6 +2030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music
       objectReference: {fileID: 0}
+    - target: {fileID: 5926765045618482171, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 884625566}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -627.3645
@@ -2122,7 +2126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ad348a332fc7d4cb219ef7a94f06a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LeftBound: 5
+  m_LeftBound: 30
   m_RightBound: 0
   m_StartMovingRight: 0
   m_MoveSpeed: 10
@@ -2547,7 +2551,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9a7050cda93a3724da36d56548fd1726, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2647,13 +2651,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5926765045618482171, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 1577098739}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 209.55878
+      value: 323.6
       objectReference: {fileID: 0}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1019459
+      value: 3.31
       objectReference: {fileID: 0}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2740,7 +2748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LeftBound: 0
-  m_RightBound: 5
+  m_RightBound: 30
   m_StartMovingRight: 1
   m_MoveSpeed: 10
 --- !u!114 &1248698148
@@ -2880,7 +2888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LeftBound: 0
-  m_RightBound: 14
+  m_RightBound: 84
   m_StartMovingRight: 1
   m_MoveSpeed: 20
 --- !u!114 &1428887066
@@ -26421,6 +26429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5926765045618482171, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 216945739}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -392.96448
@@ -26478,13 +26490,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5926765045618482171, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 915060781}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.568237
       objectReference: {fileID: 0}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.89475
+      value: -27
       objectReference: {fileID: 0}
     - target: {fileID: 5926765045618482174, guid: b3267e0d6bfc07841aa85483eec47fbc, type: 3}
       propertyPath: m_LocalPosition.z
