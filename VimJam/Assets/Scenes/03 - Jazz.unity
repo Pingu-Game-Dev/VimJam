@@ -6121,7 +6121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 694215771}
   closer: {fileID: 1471691310}
-  nextScene: 04 - Synthwave
+  nextScene: 03 - Synth
 --- !u!212 &315686522
 SpriteRenderer:
   m_ObjectHideFlags: 0
