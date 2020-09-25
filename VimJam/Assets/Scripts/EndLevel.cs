@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour
 {
@@ -20,7 +20,7 @@ public class EndLevel : MonoBehaviour
             flag = true;
         }
         else if (!closer.isPlaying && flag){
-            EditorSceneManager.LoadScene(nextScene);
+            SceneManager.LoadScene(nextScene);
         }
     }
 
