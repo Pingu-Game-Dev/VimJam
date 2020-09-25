@@ -18,6 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/03 - Jazz.unity
     guid: d54808643df94fa4d8977e03bd699701
   - enabled: 1
-    path: Assets/Scenes/04 - Synthwave.unity
-    guid: 0aa0761625186c3409271d649957ee7b
+    path: Assets/Scenes/03 - Synth.unity
+    guid: 805596ce450bfa4448f37c51cc23f35b
   m_configObjects: {}

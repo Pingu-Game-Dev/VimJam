@@ -19,6 +19,6 @@ public class LevelSelect : MonoBehaviour
     }
     public void PlayL3()
     {
-        SceneManager.LoadScene("04 - Synthwave");
+        SceneManager.LoadScene("03 - Synth");
     }
 }
