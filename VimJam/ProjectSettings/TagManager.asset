@@ -38,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Wallpaper
     uniqueID: 655646133
     locked: 0
@@ -49,6 +46,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3506688545
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Player
     uniqueID: 1378206161
