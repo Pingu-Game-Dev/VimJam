@@ -7,13 +7,13 @@ using UnityEngine;
 public class MoverConsistent : MonoBehaviour
 {
     // Setup bits
-    [SerializeField] private float m_LeftBound = 4f;
-    [SerializeField] private float m_RightBound = 4f;
-    [SerializeField] private bool m_StartMovingRight = true;
-    [SerializeField] private float m_MoveSpeed = 4f;
+    public float m_LeftBound = 4f;
+    public float m_RightBound = 4f;
+    public bool m_StartMovingRight = true;
+    public float m_MoveSpeed = 4f;
     private Vector2 startPos;
     // Grid size
-    private readonly float SCALE = 6f;
+    private readonly float SCALE = 1f;
 
 
     void Start()

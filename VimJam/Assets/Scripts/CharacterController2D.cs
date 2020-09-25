@@ -96,6 +96,7 @@ public class CharacterController2D : MonoBehaviour
 		wallBack = false;
 		animator.SetFloat("Speed", m_Rigidbody2D.velocity.x * m_Rigidbody2D.velocity.x);
 		animator.SetBool("Grounded", m_Grounded);
+		
 		// If crouching, check to  see if the character can stand up
 		if (!crouch)
 		{
@@ -105,6 +106,7 @@ public class CharacterController2D : MonoBehaviour
 				crouch = true;
 			}
 		}
+		animator.SetBool("Crouch",crouch);
 
 		// If the input is moving the player right and the player is facing left...
 		if (move > 0 && !m_FacingRight)
