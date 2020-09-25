@@ -219,6 +219,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7105147321138357835, guid: a0f26ea0110fed64cadcbf5e08f1f28e, type: 3}
+      propertyPath: lp
+      value: 
+      objectReference: {fileID: 798941049}
     - target: {fileID: 7105147321138357838, guid: a0f26ea0110fed64cadcbf5e08f1f28e, type: 3}
       propertyPath: m_Name
       value: PauseMenuCanvas
@@ -2010,6 +2014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+--- !u!169 &798941049 stripped
+AudioLowPassFilter:
+  m_CorrespondingSourceObject: {fileID: 1013896068912942565, guid: 39bb91b3a63cc794c906d0b6a5fc88c4, type: 3}
+  m_PrefabInstance: {fileID: 798941048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &806344399
 PrefabInstance:
   m_ObjectHideFlags: 0
